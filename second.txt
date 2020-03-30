@@ -1,1 +1,3 @@
 This is a note for the Coding Cult's git lesson
+
+Wow! I feel like this will be helpful in the future.
