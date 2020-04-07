@@ -1,0 +1,116 @@
+---
+title: "chp 4"
+author: "Kodeen Thompson"
+date: "4/6/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+1 / 200 * 30
+(59 + 73 + 2) / 3
+sin(pi / 2)
+```
+
+```{r}
+x <- 3 * 4
+```
+
+```{r}
+object_name <- value
+```
+
+```{r}
+i_use_snake_case
+otherPeopleUseCamelCase
+some.people.use.periods
+And_aFew.People_RENOUNCEconvention
+```
+
+```{r}
+x
+```
+
+```{r}
+this_is_a_really_long_name <- 2.5
+```
+
+```{r}
+r_rocks <- 2 ^ 3
+```
+
+```{r}
+r_rock
+R_rocks
+```
+
+```{r}
+function_name(arg1 = val1, arg2 = val2, ...)
+```
+
+```{r}
+seq(1, 10)
+```
+
+```{r}
+x <- "hello world"
+```
+
+```{r}
+> x <- "hello
++
+```
+
+
+```{r}
+y <- seq(1, 10, length.out = 5)
+y
+```
+
+```{r}
+(y <- seq(1, 10, length.out = 5))
+```
+
+```{r}
+my_variable <- 10
+my_varıable
+```
+
+```{r}
+library(tidyverse)
+
+ggplot(dota = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy))
+
+fliter(mpg, cyl = 8)
+filter(diamond, carat > 3)
+```
+
