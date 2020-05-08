@@ -1,0 +1,41 @@
+---
+title: "Untitled"
+author: "Kodeen Thompson"
+date: "5/8/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+population<-read.csv(file.choose(),header = TRUE)
+```
+
+```{r}
+hist(population$X.5)
+```
+```{r}
+hist(population$X.5, xlab="Population 1985", ylab="Frequency of Population")
+```
+```{r}
+hist(population$X.5, breaks=7)
+```
+
+```{r}
+hist(population$X.5, breaks=5)
+```
+
+```{r}
+hist(population$X.5, breaks=50)
+```
+
+```{r}
+hist(population$X.5, border="black", col="pink")
+```
+```{r}
+hist(population$X.5, border="black", col="pink",xlab="Population 1985", ylab="Frequency of Population")
+```
+
+
