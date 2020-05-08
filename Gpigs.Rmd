@@ -1,0 +1,59 @@
+---
+title: "05/08/2020 Gpigs"
+author: "Kodeen Thompson"
+date: "5/8/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+Gpigs<-read.csv(file.choose(), header=T)
+```
+
+```{r}
+str(Gpigs)
+```
+```{r}
+labels(Gpigs)
+```
+```{r}
+length(Gpigs)
+```
+
+```{r}
+dim(Gpigs)
+```
+
+```{r}
+Age<-Gpigs$Age
+```
+
+```{r}
+mean(Age)
+```
+```{r}
+sd(Age)
+```
+```{r}
+var(Age)
+```
+
+```{r}
+hist(Age)
+```
+```{r}
+hist(Age, border="blue", col="green")
+```
+```{r}
+hist(Age, border="chocolate2", col="yellow", main="Histogram for Guinea Pigs")
+```
+```{r}
+hist(Age, border="chocolate2", col="yellow", density=5, main="Histogram for Guinea Pigs")
+```
+```{r}
+hist(Age, border="chocolate2", col="yellow", density=20, breaks=c(1,3,5,7,9), main="Histogram for Guinea Pigs")
+```
+
